@@ -1,0 +1,20 @@
+# Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Local user configs / databases
+config.json
+ir_assignments.csv
+ir_assignments.md
+
+# Temp compiles
+temp_recorder.yaml
+final_remote_receiver.yaml
+.esphome/
