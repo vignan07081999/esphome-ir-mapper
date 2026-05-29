@@ -141,7 +141,7 @@ def get_final_yaml(board: str, wifi_ssid: str, wifi_password: str, pin: str, map
             pronto_data = data.get("data", "")
             yaml_lines.append("    pronto:")
             yaml_lines.append(f'      data: "{pronto_data}"')
-            yaml_lines.append("      delta: 1000")
+            yaml_lines.append("      delta: 200")
                 
         elif protocol == "RAW":
             raw_code = data.get("raw_code", [])

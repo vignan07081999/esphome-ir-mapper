@@ -512,6 +512,8 @@ class AddMappingDialog(QDialog):
 
     @pyqtSlot(str, dict)
     def on_code_captured(self, protocol, data):
+        if self.captured_protocol is not None:
+            return
         self.captured_protocol = protocol
         self.captured_data = data
         
